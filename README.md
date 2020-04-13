@@ -7,21 +7,22 @@ To use the snippets, type the keyword and use TAB twice.
 
 **consolereadline.snippet** keyword _crr
 
->var input = Console.ReadLine();
+```var input = Console.ReadLine();```
 
 **escapekey.snippet**      keyword _anykey
-
-> Console.WriteLine("Press any key to exit.");
-> Console.ReadKey(true);	
-
+``` 
+Console.WriteLine("Press any key to exit.");
+Console.ReadKey(true); 
+```
 **stringToParse.snippet**  keyword _stip - meaning (S)tring (T)o (I)nteger (P)arse
+```
+string stringToParse = "";
+ int numberOut;
 
-> string stringToParse = "";
-> int numberOut;
-
-> while (!int.TryParse(stringToParse, out numberOut))
->			{
->			Console.WriteLine("Please type a number.");
->			stringToParse = Console.ReadLine();
->			};
+ while (!int.TryParse(stringToParse, out numberOut))
+ {
+	Console.WriteLine("Please type a number.");
+	stringToParse = Console.ReadLine();
+ }
+```
 
