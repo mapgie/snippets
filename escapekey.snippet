@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>anykey</Title>
+            <Shortcut>anykey</Shortcut>
+            <Description>Code snippet for Escape Key to End Prog</Description>
+            <SnippetTypes>
+            <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID>input</ID>
+                    <ToolTip>variable for console input</ToolTip>
+                    <Default>input</Default>
+                </Literal>
+                <Literal Editable="false">
+                    <ID>SystemConsole</ID>
+                    <Function>SimpleTypeName(global::System.Console)</Function>
+                </Literal>
+            </Declarations>
+            <Code Language="csharp"><![CDATA[
+            Console.WriteLine("Press any key to exit.");   
+            Console.ReadKey(true);$end$]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
